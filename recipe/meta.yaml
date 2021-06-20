@@ -1,5 +1,5 @@
 {% set name = "pygeohydro" %}
-{% set version = "0.10.2" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeohydro-{{ version }}.tar.gz
-  sha256: c686a8c79bffcc4d824c91946ab091dad6ceaa2e97aeebaea603485c39ae8c7b
+  sha256: 3e1f01dea49419360806bb43ff98e58a7aa1e64d1451dc785a561a89d354717b
 
 build:
   number: 0
@@ -18,36 +18,24 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools-scm
   run:
-    - aiodns
-    - aiohttp
-    - brotlipy
-    - chardet
+    - async_retriever
     - cytoolz
     - defusedxml
     - folium
     - geopandas
     - lxml
     - matplotlib-base
-    - nest-asyncio
-    - netcdf4
-    - networkx
-    - openpyxl
-    - orjson
-    - owslib
-    - pyarrow
+    - numpy
+    - pandas
     - pygeoogc
     - pygeoutils
     - pynhd
-    - pyproj
-    - python >=3.6
+    - python >=3.7
     - rasterio
-    - requests
-    - setuptools
     - shapely
-    - simplejson
     - xarray
 
 test:
@@ -60,7 +48,7 @@ test:
 
 about:
   home: https://github.com/cheginit/pygeohydro
-  summary: A portal to access hydrology and climatology databases in Python
+  summary: Access geospatial hydrology web services through Python
   license: MIT
   license_file: LICENSE
 

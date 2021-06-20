@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeohydro-feedstock/blob/master/LICENSE.txt)
 
-Summary: A portal to access hydrology and climatology databases in Python
+Summary: Access geospatial hydrology web services through Python
 
 Current build status
 ====================
@@ -36,6 +36,7 @@ Installing `pygeohydro` from the `conda-forge` channel can be achieved by adding
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `pygeohydro` can be installed with:
