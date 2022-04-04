@@ -1,5 +1,5 @@
 {% set name = "pygeohydro" %}
-{% set version = "0.12.4" %}
+{% set version = "0.13.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeohydro-{{ version }}.tar.gz
-  sha256: 5424b993b3404ea43c341b432dd0b4c6df7f2f749a4594909fcb1afd7901b9d8
+  sha256: 224f307e67847e2aec95c416cc073abbcb14f937e1526a8a58c1245d56fed884
 
 build:
   number: 0
@@ -21,22 +21,23 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
-    - async_retriever >=0.3.1
+    - async_retriever >=0.3.2
     - cytoolz
     - defusedxml
     - folium
     - geopandas >=0.7
+    - h5netcdf
     - lxml
     - matplotlib-base >=3.0
     - numpy >=1.17
     - pandas >=1.0
-    - pygeoogc >=0.12.2
-    - pygeoutils >=0.12.2
-    - pynhd >=0.12.1
+    - pygeoogc >=0.13
+    - pygeoutils >=0.13
+    - pynhd >=0.13
     - python >=3.7
     - rasterio
     - scipy
-    - shapely >=1.6
+    - shapely >=1.7
     - xarray >=0.18
     - importlib_metadata
 
