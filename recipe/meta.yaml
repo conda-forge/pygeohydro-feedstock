@@ -28,9 +28,9 @@ requirements:
     - geopandas >=0.7
     - h5netcdf
     - lxml
-    - matplotlib-base >=3.0
     - numpy >=1.17
     - pandas >=1.0
+    - proplot
     - pygeoogc >=0.13.1
     - pygeoutils >=0.13.1
     - pynhd >=0.13.1
