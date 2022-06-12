@@ -1,5 +1,5 @@
 {% set name = "pygeohydro" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeohydro-{{ version }}.tar.gz
-  sha256: 224f307e67847e2aec95c416cc073abbcb14f937e1526a8a58c1245d56fed884
+  sha256: 1f6ce19ac4557f5b5a26f991ca56a4cbbf1288f06ac09a3f033b2a974468cb02
 
 build:
   number: 0
@@ -28,12 +28,12 @@ requirements:
     - geopandas >=0.7
     - h5netcdf
     - lxml
-    - matplotlib-base >=3.0
     - numpy >=1.17
     - pandas >=1.0
-    - pygeoogc >=0.13
-    - pygeoutils >=0.13
-    - pynhd >=0.13
+    - proplot
+    - pygeoogc >=0.13.1
+    - pygeoutils >=0.13.1
+    - pynhd >=0.13.1
     - python >=3.7
     - rasterio
     - scipy
