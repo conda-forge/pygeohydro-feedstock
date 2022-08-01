@@ -11,7 +11,7 @@ source:
   sha256: 7c1e76b8f8a481346cc7d6c40a5a9a736ed583d247663d86e8a2c722be650fe0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,6 @@ requirements:
     - setuptools-scm
   run:
     - async_retriever >=0.3.4
-    - attrs <22.0
     - cytoolz
     - defusedxml
     - folium
