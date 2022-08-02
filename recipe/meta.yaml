@@ -24,6 +24,7 @@ requirements:
     - async_retriever >=0.3.4
     - cytoolz
     - defusedxml
+    - exceptiongroup
     - folium
     - geopandas >=0.8
     - h5netcdf
