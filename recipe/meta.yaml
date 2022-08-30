@@ -1,6 +1,5 @@
 {% set name = "pygeohydro" %}
-{% set version = "0.13.3" %}
-
+{% set version = "0.13.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,38 +7,37 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeohydro-{{ version }}.tar.gz
-  sha256: 7c1e76b8f8a481346cc7d6c40a5a9a736ed583d247663d86e8a2c722be650fe0
+  sha256: 96e52847e8751c9f81c9808358fd803720bb4fce4811200c710dcb9ef87468ec
 
 build:
-  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - pip
     - python >=3.8
+    - pip
     - setuptools-scm
   run:
-    - async_retriever >=0.3.4
-    - cytoolz
-    - defusedxml
-    - exceptiongroup
-    - folium
-    - geopandas >=0.8
-    - h5netcdf
-    - lxml
-    - numpy >=1.17
-    - pandas >=1.0
-    - proplot
-    - pygeoogc >=0.13.3
-    - pygeoutils >=0.13.2
-    - pynhd >=0.13.3
     - python >=3.8
-    - rasterio
+    - defusedxml
+    - pynhd >=0.13.5
+    - lxml
+    - pandas >=1.0
+    - h5netcdf
+    - geopandas >=0.8
     - scipy
-    - shapely >=1.7
+    - numpy >=1.17
+    - async_retriever >=0.3.5
+    - shapely >=1.8
+    - pygeoogc >=0.13.5
+    - folium
+    - rasterio >=1.2
+    - cytoolz
     - xarray >=2022.03.0
+    - pygeoutils >=0.13.5
+    - proplot
 
 test:
   imports:
@@ -50,10 +48,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/cheginit/pygeohydro
-  summary: Access geospatial hydrology web services through Python
+  home: https://github.com/hyriver/pygeohydro
+  summary: Access geospatial web services that offer hydrological data
   license: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
 
 extra:
   recipe-maintainers:

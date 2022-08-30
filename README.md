@@ -1,13 +1,13 @@
 About pygeohydro
 ================
 
-Home: https://github.com/cheginit/pygeohydro
+Home: https://github.com/hyriver/pygeohydro
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeohydro-feedstock/blob/main/LICENSE.txt)
 
-Summary: Access geospatial hydrology web services through Python
+Summary: Access geospatial web services that offer hydrological data
 
 Current build status
 ====================
