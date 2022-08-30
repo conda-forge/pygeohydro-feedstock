@@ -1,5 +1,5 @@
 {% set name = "pygeohydro" %}
-{% set version = "0.13.3" %}
+{% set version = "0.13.5" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeohydro-{{ version }}.tar.gz
-  sha256: 7c1e76b8f8a481346cc7d6c40a5a9a736ed583d247663d86e8a2c722be650fe0
+  sha256: 96e52847e8751c9f81c9808358fd803720bb4fce4811200c710dcb9ef87468ec
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
