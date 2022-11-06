@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -29,7 +29,7 @@ requirements:
     - hydrosignatures
     - loguru
     - lxml
-    - matplotlib >=3.3
+    - matplotlib-base >=3.3
     - numpy >=1.17
     - pandas >=1.0
     - pygeoogc >=0.13.7
