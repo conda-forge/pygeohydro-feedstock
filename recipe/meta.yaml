@@ -27,7 +27,7 @@ requirements:
     - folium
     - geopandas >=0.10
     - h5netcdf
-    - hydrosignatures
+    - hydrosignatures >=0.1.2
     - loguru
     - lxml
     - matplotlib-base >=3.3
