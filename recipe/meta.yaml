@@ -22,26 +22,26 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - async-retriever >=0.14
+    - async-retriever =0.15
     - cytoolz
     - dask-core
     - defusedxml
     - folium
     - geopandas >=0.10
     - h5netcdf
-    - hydrosignatures >=0.14
+    - hydrosignatures =0.15
     - lxml
     - matplotlib-base >=3.5
     - numpy >=1.21
     - pandas >=1.0
-    - pygeoogc >=0.14
-    - pygeoutils >=0.14
-    - pynhd >=0.14
+    - pygeoogc =0.15
+    - pygeoutils =0.15
+    - pynhd =0.15
     - pyproj >=2.2
     - rasterio >=1.2
     - rioxarray >=0.11
     - scipy
-    - shapely >=2
+    - shapely >=1.8.5
     - ujson
     - xarray >=2022.03.0
 
