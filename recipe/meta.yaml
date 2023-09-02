@@ -36,7 +36,7 @@ requirements:
     - pandas >=1.0
     - pygeoogc <0.16,>=0.15.1
     - pygeoutils <0.16,>=0.15
-    - pynhd <0.16,>=0.15
+    - pynhd <0.16,>=0.15.1
     - pyproj >=3.0.1
     - rasterio >=1.2
     - rioxarray >=0.11
