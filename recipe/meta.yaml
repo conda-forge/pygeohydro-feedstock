@@ -17,26 +17,26 @@ build:
 requirements:
   host:
     - python >=3.8
-    - setuptools >=42
-    - setuptools-scm >=7
+    - hatchling >=1.12
+    - hatch-vcs
     - pip
   run:
     - python >=3.8
-    - async-retriever <0.17,>=0.16
+    - async-retriever <0.18,>=0.17
     - cytoolz
     - defusedxml
     - folium
     - geopandas-base >=0.10
-    - fiona
+    - pyogrio
     - h5netcdf
-    - hydrosignatures <0.17,>=0.16
+    - hydrosignatures <0.18,>=0.17
     - lxml
     - matplotlib-base >=3.5
     - numpy >=1.21
     - pandas >=1.0
-    - pygeoogc <0.17,>=0.16.3
-    - pygeoutils <0.17,>=0.16.3
-    - pynhd <0.17,>=0.16
+    - pygeoogc <0.18,>=0.17
+    - pygeoutils <0.18,>=0.17
+    - pynhd <0.18,>=0.17
     - pyproj >=3.0.1
     - rasterio >=1.2
     - rioxarray >=0.11
