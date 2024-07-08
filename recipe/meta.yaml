@@ -1,5 +1,5 @@
 {% set name = "pygeohydro" %}
-{% set version = "0.16.5" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeohydro-{{ version }}.tar.gz
-  sha256: 7c8d601efdf94fe6393e3336c62e84dea6367afa4db439e56256726cd30cbdf6
+  sha256: a3691f87318237884c8273072f724fc6764e32768d92108d04b2ca4e32f07e56
 
 build:
   noarch: python
@@ -17,26 +17,26 @@ build:
 requirements:
   host:
     - python >=3.8
-    - setuptools >=42
-    - setuptools-scm >=7
+    - hatchling >=1.12
+    - hatch-vcs
     - pip
   run:
     - python >=3.8
-    - async-retriever <0.17,>=0.16
+    - async-retriever <0.18,>=0.17
     - cytoolz
     - defusedxml
     - folium
     - geopandas-base >=0.10
-    - fiona
+    - pyogrio
     - h5netcdf
-    - hydrosignatures <0.17,>=0.16
+    - hydrosignatures <0.18,>=0.17
     - lxml
     - matplotlib-base >=3.5
     - numpy >=1.21
     - pandas >=1.0
-    - pygeoogc <0.17,>=0.16.3
-    - pygeoutils <0.17,>=0.16.3
-    - pynhd <0.17,>=0.16
+    - pygeoogc <0.18,>=0.17
+    - pygeoutils <0.18,>=0.17
+    - pynhd <0.18,>=0.17
     - pyproj >=3.0.1
     - rasterio >=1.2
     - rioxarray >=0.11
