@@ -1,5 +1,5 @@
 {% set name = "pygeohydro" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - hatchling >=1.12
     - hatch-vcs
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - async-retriever <0.18,>=0.17
     - cytoolz
     - defusedxml
@@ -34,7 +34,7 @@ requirements:
     - matplotlib-base >=3.5
     - numpy >=1.21
     - pandas >=1.0
-    - pygeoogc <0.18,>=0.17
+    - pygeoogc <0.18,>=0.17.1
     - pygeoutils <0.18,>=0.17
     - pynhd <0.18,>=0.17
     - pyproj >=3.0.1
