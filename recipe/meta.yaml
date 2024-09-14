@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeohydro-{{ version }}.tar.gz
-  sha256: a3691f87318237884c8273072f724fc6764e32768d92108d04b2ca4e32f07e56
+  sha256: 35c690e27a64d8ff85f607446c4bb6fc40af75a31aef0f192a924cf073739922
 
 build:
   noarch: python
