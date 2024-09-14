@@ -1,5 +1,5 @@
 {% set name = "pygeohydro" %}
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeohydro-{{ version }}.tar.gz
-  sha256: a3691f87318237884c8273072f724fc6764e32768d92108d04b2ca4e32f07e56
+  sha256: 35c690e27a64d8ff85f607446c4bb6fc40af75a31aef0f192a924cf073739922
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - hatchling >=1.12
     - hatch-vcs
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - async-retriever <0.18,>=0.17
     - cytoolz
     - defusedxml
@@ -34,7 +34,7 @@ requirements:
     - matplotlib-base >=3.5
     - numpy >=1.21
     - pandas >=1.0
-    - pygeoogc <0.18,>=0.17
+    - pygeoogc <0.18,>=0.17.1
     - pygeoutils <0.18,>=0.17
     - pynhd <0.18,>=0.17
     - pyproj >=3.0.1
